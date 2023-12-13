@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            overflow-x: hidden;
+          }
+        .navbar {
+            top: 0px;
+            position: absolute;
+            overflow: hidden;
+            text-align: center;
+            background-image: url(header-bg.jpg);
+            padding: 40px;
+            width: 100%;
+
+
+        }
+
+        .abouthome button {
+            text-decoration: none;
+            border: none;
+            font-size: large;
+            background-color: #ffffff;
+            word-spacing: 10px;
+            font-style: normal;
+            color: gray;
+
+
+
+
+
+        }
+
+        /* *, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+        button:hover {
+            background-color: #ffffff;
+            color: #060707;
+        }
+        .search a{
+            position: relative;
+             left: 300px;
+             bottom: 35px;
+
+        }
+
+        h1 {
+            width: 100%;
+            float: left;
+            font-size: 48px;
+            color: #060707;
+            font-weight: 700;
+        }
+
+        .page img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+
+        }
+
+        .card {
+
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card1 {
+            position: absolute;
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #ffffff;
+            color: gray;
+            text-align: center;
+            width: 400px;
+            height: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem;
+            bottom: 50px;
+            left: 40px;
+            animation-name: move;
+            animation-duration: 4s;
+            /* animation-iteration-count: 3; */
+            animation-fill-mode: inherit;
+            /* animation-timing-function: steps(30); */
+  }
+  @keyframes move{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 100%;
+    }
+  }
+
+        .card a:link,
+        .card a:visited {
+
+            color: #ececec;
+            display: inline-block;
+            text-decoration: none;
+            background-color: green;
+            padding: 1.2rem 3rem;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 14px;
+            /* transition: all 0.2s; */
+
+        }
+
+        .box {
+            width: 100%;
+            height: 50%;
+            margin-top: 0;
+            padding: 30px;
+            background-color: green;
+        }
+
+        .about_us h1 {
+            /* background: pink; */
+            margin-left: 15%;
+
+        }
+
+        .about_us p {
+            margin-left: 15%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+
+        .container1 img {
+            width: 50%;
+            float: left;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+        }
+
+        .container2 {
+            width: 50%;
+            float: right;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+            font-family: Roboto, sans-serif;
+        }
+
+        .container {
+            margin-left: 20%;
+        }
+
+
+        /* .container a:link,
+        .container a:visited {
+
+            color: #ececec;
+            display: inline-block;
+            text-decoration: none;
+            background-color: black;
+            padding: 0px;
+            border-radius: 0px;
+            margin-top: 0px;
+            font-size: 14px;
+            justify-content: center;
+            text-align: center;
+            float: right;
+        } */
+
+        .read a:hover {
+            color: #fff;
+            background-color: #13a25d;
+        }
+
+        .read_btn {
+            width: 100px;
+            height: 30px;
+            float: right;
+            font-size: 14px;
+            color: #fff;
+            background-color: #181818;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+
+        }
+
+        img .about_us {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: -1;
+
+        }
+
+        .table {
+            /* width: 70%; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+
+        }
+
+        .row {
+            width: 50%;
+            float: left;
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            font-family: roboto, sans-serif;
+
+        }
+
+        .page3 {
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+
+        .book img {
+            width: 60%;
+            float: left;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+        }
+
+        .book1 {
+            width: 40%;
+            float: left;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+            font-family: Roboto, sans-serif;
+        }
+
+        .read1 a:hover {
+            color: #fff;
+            background-color: #13a25d;
+        }
+
+        .read_bt {
+            width: 100px;
+            height: 30px;
+            float: right;
+            font-size: 14px;
+            color: #fff;
+            background-color: #181818;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+
+        }
+
+        .page2 {
+            background-image: url(image6.jpg);
+
+
+        }
+
+
+        .page3 {
+            margin-left: 20%;
+        }
+
+        .text1 {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            color: #141414;
+            text-align: center;
+            font-weight: 700;
+            font-family: Roboto, sans-serif;
+        }
+
+        .imp {
+            margin-top: -300px;
+            padding-left: 50%;
+
+
+        }
+
+
+
+        .see a:hover {
+            color: #fff;
+            background-color: #13a25d;
+        }
+
+        .btn {
+            width: 100px;
+            height: 30px;
+            margin-left: 50%;
+            font-size: 14px;
+            color: #fff;
+            background-color: #181818;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+
+        }
+
+
+
+       
+
+        .form {
+            margin-left: 20%;
+        }
+
+        .mail_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #727272;
+            border: 0;
+            background-color: #ffff;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: roboto, sans-serif;
+        }
+
+        .see1 a {
+            color: #fff;
+            background-color: #13a25d;
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 30px;
+            margin-left: 20%;
+            font-size: 14px;
+            color: #fff;
+            background-color: #181818;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+
+        }
+        /* .page5 img {
+            position:page5,relative;
+            /* left: 50px; */
+            /* top: 50px; */
+            /* z-index: -1; */
+
+        /* }  */
+        .page5  {
+    position: absolute;
+    
+    
+        }
+         .row1 {
+            position: relative;
+            bottom: 600px;
+            margin-left: 20%;
+        }
+        .form {
+            position: relative;
+            bottom: 600px;
+            margin-left: 20%;
+        }
+        .see1 {
+            position: relative;
+            bottom: 600px;
+            margin-left: 20%;
+        }
+
+
+
+        /* .page6 {
+            margin-left: 40%;
+        } */
+
+        .mark {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .testimonial_box {
+            width: 50%;
+            background-color: #fff;
+            padding: 55px 30px 100px 30px;
+            box-shadow: 0 2px 12px 10px #f3f2f2;
+            margin-left: 30%;
+
+
+        }
+
+        .testimonial_box:hover {
+            color: #fff;
+            background-color: #13a25d;
+        }
+
+        .quick_icon1 img {
+            float: right;
+        }
+
+        .quick_icon img {
+
+            float: right;
+        }
+
+        .footer {
+            background-color: #060707;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .location_main {
+            width: 100%;
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .location_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #8e8e8e;
+            font-family: Roboto, sans-serif;
+        }
+
+        .img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .padding_left_10 {
+            padding-left: 10px;
+        }
+
+        .location_text a {
+            color: #8e8e8e;
+        }
+
+        .footer1 {
+
+            width: 100%;
+            float: left;
+            padding-top: 50px;
+            color: #ececec;
+        }
+
+        .row2 {
+            display: flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+
+        }
+
+        .col-lg-4 {
+            flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .footer_taital {
+            width: 100%;
+            float: left;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+            font-family: Roboto, sans-serif;
+        }
+
+        .footer_text {
+            width: 80%;
+            float: left;
+            font-size: 16px;
+            color: #8e8e8e;
+            margin: 0;
+            padding-top: 20px;
+            font-family: Roboto, sans-serif;
+        }
+
+        .Enter_text {
+            width: 100%;
+            float: left;
+            font-size: 18px;
+            color: #8e8e8e;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+            padding: 8px 10px 4px 0;
+            margin-top: 10px;
+            border: 0;
+        }
+
+        .subscribe_bt {
+            width: 170px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .subscribe_bt a {
+            width: 100%;
+            float: left;
+            font-size: 20px;
+            color: #13a25d;
+            background-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .social_icon {
+            float: left;
+            flex: 0 0 0 0 20%;
+            flex: 0 0 0 0 20%;
+            max-width: 20%;
+
+        }
+
+        li,
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .copyright_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="abouthome">
+            <button class="home">HOME</button>
+            <button class="service">SERVICE</button>
+            <button class="blog">BLOG</button>
+            <button class="about">ABOUT</button>
+            <button class="events">EVENTS</button>
+            <button class="contact us">CONTACT US</button>
+
+            <div class="search">
+            <!-- <input class="srch" type="search" name=""> -->
+            <a href="#"><img src="search.jpg" height="40px"></a>
+            </div>
+        </div>
+    </div>
+    <div class="page1">
+        <img src="back.jpg" height="100%" width="100%">
+        <div class="card">
+            <div class="card1">
+                <h1>Business Agency Profit Your Marketing</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                </p>
+                <a class="product-btn" href="#">CONTACT US</a>
+                <a class="products" href="#">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="about_us">
+        <h1>About_Us</h1>
+
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+        </p>
+    </div>
+    <div class="container">
+        <div class="container1"><img src="image2.jpg" width="300" height="300"></div>
+        <div class="container2">
+            <p>There are many variations of passages of Lorem Ipsum available, but the<br>
+                majority have suffered alteration in some form, by injected humour,<br>
+                or randomised words</p>
+            <div class="read">
+                <a class="read_btn" href="#">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="page2">
+        <!-- <img src="image6.jpg" height="100%" width="100%"> -->
+        <div class="about_us">
+            <h1 class="services_taital">What We Do</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content
+                of a page when</p>
+            <div class="table">
+                <div class="row">
+                    <img src="icon-1.png">
+                    <h4>Selection of Business</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br> available, but the
+                        form, by <br>injected humour, or randomised</p>
+                </div>
+                <div class="row">
+                    <img src="icon-2.png">
+                    <h4>Research and Analytics</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br>available, but<br> the form, by
+                        injected humour,
+                        or randomised
+                </div>
+                <div class="row">
+                    <img src="icon-3.png">
+                    <h4>Business Plans</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br> available, but<br> the form, by
+                        injected humour, or randomised</p><br>
+                </div>
+                <div class="row">
+                    <img src="icon-4.png">
+                    <h4>Securities Transactions</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br> available, but<br> the form, by
+                        injected humour, or randomised</p>
+                </div>
+                <div class="row">
+                    <img src="icon-5.png">
+                    <h4>Advisory Activities</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br> available, but<br> the form, by
+                        injected humour, or randomised</p>
+                </div>
+                <div class="row">
+                    <img src="icon-6.png">
+                    <h4>Management and Asset</h4>
+                    <p>There are many variations of<br> passages of Lorem Ipsum<br> available, but<br> the form, by
+                        injected humour, or randomised</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="page3">
+        <div class="book"><img src="image4.jpg" width="300" height="300"></div>
+        <div class="book1">
+            <p>There are many variations of passages of Lorem Ipsum available, but the<br>
+                majority have suffered alteration in some form, by injected humour,<br>
+                or randomised words</p>
+            <div class="read1">
+                <a class="read_bt" href="#">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="page4">
+        <h1 class="text1">Follow Our Video For Solved Your Problem</h1>
+        <div class="text2"><img src="back.jpg" width="80%" height="80%"></div>
+        <div class="imp">
+            <div class="text3 "><img src="play-icon.png"></div>
+        </div>
+        <div class="see"><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a class="btn" href="#">SEE MORE</a><br><br>
+        </div>
+    </div>
+    <div class="page5">
+        <img src="contact-bg.png" width="100%" height="100%">
+        
+            <div class="row1">
+                <h2>Get In Touch</h2>
+                <p>majority have suffered alteration in some form, by injected humour, or</p>
+            </div>
+            <div class="form">
+                <input type="text" class="text_mail" placeholder="Full Name" name="Full Name"><br><br>
+                <input type="text" class="text_mail" placeholder="phone number" name="phone number"><br><br>
+                <input type="text" class="text_mail" placeholder="Email" name="Email"><br><br>
+                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment"
+                    name="Massage"></textarea><br><br><br>
+            </div>
+            <div class="see1">
+                <a class="btn1" href="#">SEND</a>
+            </div>
+        </div>
+    
+    <div class="page6">
+        <h1>Testimonial</h1>
+        <p>majority have suffered alteration in some form, by injected humour, or</p>
+    </div>
+    <div class="mark">
+        <div class="testimonial_box">
+            <div class="jonimo_taital_main">
+                <h4 class="jonimo_text">Jonimo</h4>
+                <div class="quick_icon"><img src="quick-icon.png"></div>
+                <div class="quick_icon_1"><img src="quick-icon1.png"></div>
+            </div>
+            <p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+        </div>
+        <div class="testimonial_box">
+            <h4 class="jonimo_text1">MARK DUO</h4>
+            <div class="quick_icon1"><img src="quick-icon.png"></div>
+            <div class="quick_icon_2"><img src="quick-icon1.png"></div>
+
+            <p class="dummy_text1">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</p>
+        </div>
+    </div><br>
+    <div class="footer"><br><br><br>
+        <div class="location_main">
+            <div class="location_text"><img src="map-icon.png"><span class="padding_left_10"><a
+                        href="#">Location</a></span>
+            </div>
+            <div class="location_text center"><img src="call-icon.png"><span class="padding_left_10"><a href="#">Call ;
+                        01
+                        1234567890</a></span></div>
+            <div class="location_text right"><img src="mail-icon.png"><span class="padding_left_10"><a
+                        href="#">mail@domain.com</a></span></div>
+        </div>
+
+
+        <div class="footer2"><br><br>
+            <div class="row2">
+                <div class="col-lg-4">
+                    <h2 class="footer_taital">About</h2>
+                    <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the
+                        majority havThere are many variations of passages of Lorem Ipsum available, but the majority hav
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="footer_taital">Services Link</h2>
+                    <p class="footer_text">There are many variations of passages of Lorem Ipsum available, but the
+                        majority havThere are many variations of passages of Lorem Ipsum available, but the majority hav
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="footer_taital">Subscribe</h2>
+                    <input type="text" class="Enter_text" placeholder="Enter Your Email" name="Enter Your Email">
+                    <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                    <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="fb-icon.png"></a></li>
+                            <li><a href="#"><img src="twitter-icon.png"></a></li>
+                            <li><a href="#"><img src="linkedin-icon.png"></a></li>
+                            <li><a href="#"><img src="instagram-icon.png"></a></li>
+                            <li><a href="#"><img src="youtub-icon.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="copyright_text">Copyright 2023 All Rights Reserved. </p>
+        </div>
+
+</body>
+
+</html>
